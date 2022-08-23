@@ -19,12 +19,12 @@ const dbVersion = 1;
 		}
 	});
 
-	setTimeout(function() {
-		// check localstorage settings
-		doTheme();
-	}, 200);
-
 })();
+
+setTimeout(function() {
+	// check localstorage settings
+	doTheme();
+}, 200);
 
 function getLocalStorageItem(key) {
 	return localStorage.getItem(key);
